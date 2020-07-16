@@ -1,0 +1,39 @@
+<%- include ('header.ejs') %>
+
+<!-- login  -->
+<%-  include('login.ejs')   %>
+
+<div class="container mt-5" id="content-wrap">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4>Let's Chat</h4>
+        </div>
+        <div class="card-body" id="chat"></div>
+       
+        <form class="card-footer" id="message-form">
+          <div class="input-group">
+            <input type="text" class="form-control" id="message">
+            <button class="btn btn-warning">
+              <i class="fa fa-location-arrow"></i>
+              send
+           </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Users</h3>
+        </div>
+        <div class="card-body">
+          <div id="username"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include ('footer.ejs') %>
